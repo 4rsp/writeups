@@ -68,7 +68,7 @@ here is my understanding for future use:
 
 > > also no need to do this everytime... do it once and use `$` to overwrite again 
 
-here's the full code:
+and the full code (don't wanna call exploit... no flag):
 
 ```python3
 #!/usr/bin/env python3
