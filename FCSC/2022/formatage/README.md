@@ -7,7 +7,7 @@
 
 - Abuse pointers in form of `**` which points to stack addresses to overwrite saved rip of printf to return to main
 
-- Set up read-what-where primitive by creating a pointer table and write ROP on stack via pointer table because our input is stored in heap...
+- Set up read-what-where primitive by creating a pointer table and write ROP onto the stack via pointer table because our input is stored in heap...
 
 - and overwrite printf ret and return to our ROP chain on the stack
   
