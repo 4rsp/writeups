@@ -58,7 +58,7 @@ I followed voydstack's [writeup](https://hackropole.fr/en/writeups/fcsc2022-pwn-
 
 ...yikes.
 
-his write-up is pretty good and im not going to waste my time inventing the wheel again...
+his/her write-up is pretty good and im not going to waste my time inventing the wheel again...
 
 but i will just dump this for future use (and you 😉):
 
