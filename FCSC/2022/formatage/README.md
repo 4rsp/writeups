@@ -66,7 +66,7 @@ but i will just dump this for future use (and you 😉):
 > general concept of abusing double stack pointers and creating ptable -> ROP on the stack...
 
 - make the double pointer trick work by `"%c" * (pointer_offset - 2 ) + f"%{target - (pointer_offset - 2)}c" + "%hn"` 
-> > not sure about the first part, could it be printf cache??
+> > not sure why, could it be related to printf cache??
 
 > > also no need to do this everytime... do it once and use `$` to overwrite again 
 
