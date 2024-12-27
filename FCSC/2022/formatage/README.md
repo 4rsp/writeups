@@ -70,7 +70,7 @@ here is my understanding for future use:
 
 here's the full code:
 
-```
+```python3
 #!/usr/bin/env python3
 
 from pwn import *
