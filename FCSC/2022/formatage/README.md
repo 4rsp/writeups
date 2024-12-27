@@ -38,7 +38,7 @@ void main(void)
 ```
 > it takes our input and echoes it back
 
-> classic fmt but with only 1 shot...
+> classic fmt but with only one shot...
 
 
 ```
