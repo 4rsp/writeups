@@ -63,7 +63,7 @@ his write-up is pretty good and im not going to waste my time inventing the whee
 but i will just dump this for future use (and you 😉):
 
 ![ptable](https://github.com/user-attachments/assets/08319ac5-d387-4afb-a54f-007cb17aadea)
-> general concept of double pointers, creating ptable -> ROP on the stack...
+> general concept of abusing double stack pointers and creating ptable -> ROP on the stack...
 
 - make the double pointer trick work by `"%c" * (pointer_offset - 2 ) + f"%{target - (pointer_offset - 2)}c" + "%hn"` 
 > > not sure about the first part, could it be printf cache??
