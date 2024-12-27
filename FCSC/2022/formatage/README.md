@@ -6,8 +6,11 @@
 #### TL;DR
 
 - Abuse pointers in form of `**` which points to stack addresses to overwrite saved_rip of printf to return to main
+
 - Set up read-what-where primitive by creating a pointer table and write ROP on stack via pointer table...
+
 - and return to our ROP chain on the stack
+  
 - for profit...
 
 ```c
@@ -34,4 +37,5 @@ void main(void)
 }
 ```
 > it takes our input and echoes it back
+
 > classic fmt but with only 1 shot...
