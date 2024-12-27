@@ -60,12 +60,15 @@ his write-up is pretty good and im not going to waste my time inventing the whee
 
 here some takeaways for future use:
 
+![ptable](https://github.com/user-attachments/assets/08319ac5-d387-4afb-a54f-007cb17aadea)
+> general concept of double pointers, creating ptable -> ROP on the stack...
+
 - make the double pointer trick work by `"%c" * (pointer_offset - 2 ) + f"%{target - (pointer_offset - 2)}c" + "%hn"` 
 > not sure about the first part, could it be printf cache??
 
 > also no need to do this everytime... do it once and use `$` to overwrite again 
 
-- helper ptable address and ptable:
+
 
 
 
