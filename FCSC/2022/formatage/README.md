@@ -5,11 +5,11 @@
 
 #### TL;DR
 
-- Abuse pointers in form of `**` which points to stack addresses to overwrite saved_rip of printf to return to main
+- Abuse pointers in form of `**` which points to stack addresses to overwrite saved rip of printf to return to main
 
-- Set up read-what-where primitive by creating a pointer table and write ROP on stack via pointer table...
+- Set up read-what-where primitive by creating a pointer table and write ROP on stack via pointer table because our input is stored in heap...
 
-- and return to our ROP chain on the stack
+- and overwrite printf ret and return to our ROP chain on the stack
   
 - for profit...
 
@@ -39,3 +39,34 @@ void main(void)
 > it takes our input and echoes it back
 
 > classic fmt but with only 1 shot...
+
+
+```
+[*] '/home/4rsp/Downloads/FSCS/formatage_patched'
+    Arch:       amd64-64-little
+    RELRO:      Full RELRO
+    Stack:      No canary found
+    NX:         NX enabled
+    PIE:        PIE enabled
+    RUNPATH:    b'.'
+    SHSTK:      Enabled
+    IBT:        Enabled
+```
+> as expected, and thats how i like my binary
+
+I followed voydstack's ![writeup](https://hackropole.fr/en/writeups/fcsc2022-pwn-formatage/202b3b8a-fa8d-4a37-b342-967db364d9ee/) but it still took me 2 days to solve...
+
+his write-up is pretty good and im not going to waste my time inventing the wheel again...
+
+here some takeaways for future use:
+
+- make the double pointer trick work by `"%c" * (pointer_offset - 2 ) + f"%{target - (pointer_offset - 2)}c" + "%hn"` 
+> not sure about the first part, could it be printf cache??
+
+> also no need to do this everytime... do it once and use `$` to overwrite again 
+
+- helper ptable address and ptable:
+
+
+
+
