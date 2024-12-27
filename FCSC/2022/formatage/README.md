@@ -54,7 +54,9 @@ void main(void)
 ```
 > as expected, and thats how i like my binary
 
-I followed voydstack's ![writeup](https://hackropole.fr/en/writeups/fcsc2022-pwn-formatage/202b3b8a-fa8d-4a37-b342-967db364d9ee/) but it still took me 2 days to solve...
+I followed voydstack's ![writeup](https://hackropole.fr/en/writeups/fcsc2022-pwn-formatage/202b3b8a-fa8d-4a37-b342-967db364d9ee/) but it still took me 2 days to solve (by debugging the not patched binary)
+
+...yikes.
 
 his write-up is pretty good and im not going to waste my time inventing the wheel again...
 
