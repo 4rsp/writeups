@@ -58,7 +58,7 @@ I followed voydstack's ![writeup](https://hackropole.fr/en/writeups/fcsc2022-pwn
 
 his write-up is pretty good and im not going to waste my time inventing the wheel again...
 
-here is my understanding for future use:
+but i will just dump this for future use (and you 😉):
 
 ![ptable](https://github.com/user-attachments/assets/08319ac5-d387-4afb-a54f-007cb17aadea)
 > general concept of double pointers, creating ptable -> ROP on the stack...
