@@ -267,7 +267,10 @@ p.interactive()
 
 > or could be something else... don't wanna bother...
 
-> i learned a lot, works locally, and now just waste of time  
+> i learned a lot, works locally, and now just waste of time
+
+todo: i may found the reason.
+
 
 
 
