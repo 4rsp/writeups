@@ -263,7 +263,7 @@ p.interactive()
 ```
 > doesn't work on remote... maybe didn't try enough for 4 bytes bruteforce?
 
-> should be 12 bits bruteforce... check it again, doesn't return to main after firsty payload 
+> should be 12 bits bruteforce... check it again, doesn't return to main after first payload 
  
 > the way i handle printf ret is not looking so good with %c at the end of my payloads
 
