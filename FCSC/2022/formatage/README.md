@@ -261,7 +261,7 @@ p.sendline(payload)
 
 p.interactive()
 ```
-> doesn't work on remote...
+> doesn't work on remote... maybe didn't try enough for 4 bytes bruteforce?
  
 > the way i handle printf ret is not looking so good with %c at the end of my payloads
 
