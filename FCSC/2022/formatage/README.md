@@ -70,7 +70,7 @@ but i will just dump this for future use (and you 😉):
 
 > > also no need to do this everytime... do it once and use `$` to overwrite again 
 
-> > more sources on [this](https://j00ru.vexillium.org/slides/2015/insomnihack.pdf#page=98) and remote brute force examples [1](https://github.com/leesh3288/CTF/blob/master/2020/TWCTF_2020/blindshot/solver.py), [2](https://github.com/nobodyisnobody/write-ups/blob/main/idekCTF.2022/pwn/relativity/working.exploit.py)
+> > more about [double pointers](https://j00ru.vexillium.org/slides/2015/insomnihack.pdf#page=98) and remote brute force examples [1](https://github.com/leesh3288/CTF/blob/master/2020/TWCTF_2020/blindshot/solver.py), [2](https://github.com/nobodyisnobody/write-ups/blob/main/idekCTF.2022/pwn/relativity/working.exploit.py)
 
 and the full code (don't wanna call exploit... no flag 😞):
 
