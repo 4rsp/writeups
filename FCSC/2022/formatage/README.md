@@ -54,7 +54,7 @@ void main(void)
 ```
 > as expected, and thats how i like my binary
 
-I followed voydstack's [writeup](https://hackropole.fr/en/writeups/fcsc2022-pwn-formatage/202b3b8a-fa8d-4a37-b342-967db364d9ee/) but it still took me 2 days to solve (by debugging the not patched binary)
+I followed voydstack's [writeup](https://hackropole.fr/en/writeups/fcsc2022-pwn-formatage/202b3b8a-fa8d-4a37-b342-967db364d9ee/) but still couldn't solve on remote...
 
 ...yikes.
 
@@ -64,11 +64,13 @@ but i will just dump this for future use (and you 😉):
 
 ![ptable](https://github.com/user-attachments/assets/08319ac5-d387-4afb-a54f-007cb17aadea)
 > general concept of abusing double stack pointers and creating ptable -> ROP on the stack...
-
+ 
 - make the double pointer trick work by `"%c" * (pointer_offset - 2 ) + f"%{target - (pointer_offset - 2)}c" + "%hn"` 
 > > not sure why, could it be related to printf cache??
 
 > > also no need to do this everytime... do it once and use `$` to overwrite again 
+
+> > more sources on [this](https://j00ru.vexillium.org/slides/2015/insomnihack.pdf#page=98) and remote brute force examples [1](https://github.com/leesh3288/CTF/blob/master/2020/TWCTF_2020/blindshot/solver.py), [2](https://github.com/nobodyisnobody/write-ups/blob/main/idekCTF.2022/pwn/relativity/working.exploit.py)
 
 and the full code (don't wanna call exploit... no flag 😞):
 
