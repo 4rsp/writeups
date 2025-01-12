@@ -261,13 +261,14 @@ p.sendline(payload)
 
 p.interactive()
 ```
-> doesn't work on remote... maybe didn't try enough for 4 bytes bruteforce?
 
 > should be 12 bits bruteforce... check it again, doesn't return to main after first payload 
 
 > able to return to main now, but looks like there's another problem
 
 > burnt out... will solve similar challenge.
+
+> side note: don't ever fucking take a break when solving a problem 😠
 
 
 
