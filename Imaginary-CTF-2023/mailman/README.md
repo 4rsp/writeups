@@ -152,13 +152,9 @@ struct _IO_FILE
   char *_IO_save_end; /* Pointer to end of non-current get area. */
 ```
 
-and this awesome document about [arbitrary read and write](https://docs.google.com/presentation/d/149aANrvqmttaizMs_XGWh843DTNSd8Da9G50m3gwt5I/edit#slide=id.p) from pwn.college is all you need..
+and this awesome document about [slide](https://github.com/4rsp/writeups/blob/main/Imaginary-CTF-2023/mailman/slide.png) from pwn.college is all you need..
 
-![filest](https://github.com/user-attachments/assets/949e983f-b669-4c17-8937-27a0a25465b1)
-
-We can also set `char* _IO_read_end` and `char* _IO_write_base` the beginning of a memory that we want to write out and we set `chat* _IO_write_ptr` to the end of that value and everything else to `NULL`, we will be able to leak out a value of our choosing...
-
-With this we will get a stack leak and now we just need ROP... from where ?
+with this we will get a stack leak and now we just need ROP... from where ?
 
 main() doesn't exit, so I targeted fgets() saved_rip and wrote out the flag to stdout.
 
