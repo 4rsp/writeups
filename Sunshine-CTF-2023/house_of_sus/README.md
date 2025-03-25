@@ -37,15 +37,15 @@ and this will result in overlapping target address (read-what-where)...
 Here is my approach with helpful heap snippets to improve visuality:
 
 
-![newwilderness](https://github.com/user-attachments/assets/47fb63ae-68a5-46e8-b76c-bf89da5d1922)
+![newwilderness](https://github.com/4rsp/writeups/blob/main/Sunshine-CTF-2023/house_of_sus/pic1.png)
 
 > Use the overflow in option 3 to overwrite the wilderness with a very large number.
 
-![overlapsize](https://github.com/user-attachments/assets/2cb9e4e7-8221-4398-a75d-f3bbffa74f19)
+![overlapsize](https://github.com/4rsp/writeups/blob/main/Sunshine-CTF-2023/house_of_sus/pic2.png)
 
 > Calculate the address of wilderness and the target from the leaks and allocate a chunk with size of target - top_addr - 0x10 # for metadata
 
-![systemoverwrite](https://github.com/user-attachments/assets/f5518ba2-59f8-4808-99ed-6df30c7f0f5e)
+![systemoverwrite](https://github.com/4rsp/writeups/blob/main/Sunshine-CTF-2023/house_of_sus/pic3.png)
 
 > Overwrite malloc_hook pointer (the target address) with system
 
