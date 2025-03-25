@@ -2,8 +2,7 @@ was a classic heap challenge with 52 solves at the end of the ctf
 
 people are getting better day by day with heap...
 
-![chall](https://github.com/user-attachments/assets/78d8036a-eb7b-4e9b-9099-529cf30bdbdb)
-
+![cashmemo](https://github.com/4rsp/writeups/blob/main/EHAXCTF-2025/cash_memo/cashmemo.png)
 
 UAF vulnerability when free and the challenge is very generous with how many actions we can take
 
@@ -107,7 +106,7 @@ malloc("4", "60", payload)
 p.interactive()
 ```
 
-![flaggg](https://github.com/user-attachments/assets/279039a3-6b74-4cef-933c-96116e3bffb1)
+![flaggg](https://github.com/4rsp/writeups/blob/main/EHAXCTF-2025/cash_memo/flag.png)
 
 ***4rsp is learning...***
 
