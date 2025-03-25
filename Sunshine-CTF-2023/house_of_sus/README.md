@@ -22,7 +22,7 @@ checksec ./house_of_sus
 > No PIE, Partial RELRO, debuginfo and not stripped...
 > what more can you wish for from a binary 😅
   
-![menu](https://github.com/user-attachments/assets/24c5f22c-227d-488b-9446-7efe84d7e67e)
+![menu](https://github.com/4rsp/writeups/blob/main/Sunshine-CTF-2023/house_of_sus/menu.png)
 
 > amongus... cool menu
 
