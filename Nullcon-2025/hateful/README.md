@@ -3,7 +3,7 @@ was an easy challenge from Nullcon Goa HackIM 2025 CTF
 
 there was a format string bug in send_message function 
 
-![fmtbug](https://github.com/user-attachments/assets/5988a3b2-0d51-49f0-b773-e2acfaaebe8e)
+![func](https://github.com/4rsp/writeups/blob/main/Nullcon-2025/hateful/func.png)
 
 ```
 fgets(local_3f8,0x1000,stdin);
