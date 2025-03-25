@@ -6,11 +6,11 @@ is a challenge from 0x3CTF... the intro was pretty [sick](https://www.youtube.co
 
 main calls dev_null()
 
-![devnul](https://github.com/user-attachments/assets/3b2e7a85-5b96-4908-afaf-e9f1257402eb)
+![devnul](https://github.com/4rsp/writeups/blob/main/x3CTF-2025/devnull-as-a-service/func.png)
 
 and dev_null calls enable_seccomp()
 
-![seccomp](https://github.com/user-attachments/assets/6f43305b-8f76-4594-b662-253c7f77e8b7)
+![seccomp](https://github.com/4rsp/writeups/blob/main/x3CTF-2025/devnull-as-a-service/seccomp.png)
 
 as you can tell from the name it enables seccomp. 
 
@@ -167,7 +167,7 @@ p.interactive()
 
 and the very alive flag...
 
-![flag2](https://github.com/user-attachments/assets/48b4d69a-e57a-4aaa-a583-76ae21acf699)
+![remoteflag](https://github.com/4rsp/writeups/blob/main/x3CTF-2025/devnull-as-a-service/remoteflag.png)
 
 
 ***4rsp has started solving challs on remote, finally...***
