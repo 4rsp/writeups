@@ -212,6 +212,6 @@ p.interactive()
 ```
 
 FLAG: ```ENO{W3_4R3_50RRY_4G41N_TH4T_TH3_M3554G3_W45_N0T_53NT_T0_TH3_R1GHT_3M41L}```
-> saving it as a trophy i guess..
+
 
 ***4rsp is learning to pwn things...***
