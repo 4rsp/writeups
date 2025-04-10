@@ -2,7 +2,7 @@
 was a classic heap challenge from hackthebox Cyber Apocalypse 2025
 
 
-![vulnstrlen](https://github.com/user-attachments/assets/b3015ac9-ee9a-4ce0-81b1-296e93d38655)
+![vulnstrlen](https://github.com/4rsp/writeups/blob/main/Cyber-Apocalypse-2025/Strategist/vulnfunc.png)
 
 vuln is one byte overfloww in edit_plan function because...
 
@@ -169,7 +169,7 @@ p.clean()
 p.interactive()
 ```
 
-![hacktheboxflag](https://github.com/user-attachments/assets/cc4accd1-f0f0-4188-8f69-4935b23ec9d5)
+![hacktheboxflag](https://github.com/4rsp/writeups/blob/main/Cyber-Apocalypse-2025/Strategist/flag.png)
 
 **_4rsp is still exploiting the heap...._**
 
